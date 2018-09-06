@@ -1,0 +1,156 @@
+<script type="text/javascript">
+
+var num=10+2;
+// console.log("Hello World !");
+document.write('Hello, the number is ' + num);
+document.write('<br>');
+document.write('Every result is in console, please visit console.');
+
+var first = 'hello ';
+var second = 'world';
+
+var result = first.concat(second);
+console.log(result);
+
+// var colors = new Array('red', 'green', 'blue');
+//              OR
+var colors = ['red', 'green', 'blue'];
+
+
+console.log(colors[1]);
+colors[1]='cyan';
+console.log(colors[1])
+console.log(colors);
+
+colors.push('voilet');
+console.log('Added new color: '+colors);
+
+colors.pop();
+console.log('Removed last color: '+colors);
+
+colors.reverse();
+console.log('Reversed color: '+colors);
+
+colors.sort();
+console.log('Sorted color: '+colors);
+
+console.log('Length of color: '+colors.length)
+
+if (num==12) {
+    console.log('Number is equal to '+num);
+} else {
+    console.log('Number is not equal to '+num);
+}
+
+if (num>0) {
+    console.log(num+' is Positive.');
+} else if (num<0) {
+    console.log(num+' is Negative.');
+} else {
+    console.log(num+' is equal to 0.');
+}
+
+switch(num)
+{
+    case 5:
+        console.log('Num is equal to 5');
+        break;
+    case 10:
+        console.log('Num is equal to 10');
+        break;
+    case 12:
+        console.log('Num is equal to 12');
+        break;
+    case 15:
+        console.log('Num is equal to 15');
+        break;
+    default:
+        console.log('Num is '+num);
+}
+
+function changeVariableValue()
+{
+    num=8;
+}
+// console.log(num);
+changeVariableValue();
+console.log('New number is '+num);
+
+function increase(_num)
+{
+    _num++;
+    console.log('_num is '+_num);
+}
+increase(num);
+console.log('num is '+num);
+
+var numObject = [10, 20, 30];
+function numIncrease(_num, _numObject)
+{
+    _num++;
+    _numObject[0]++;
+    console.log('_num is '+_num+' and _numObject[0] is '+_numObject[0]);
+}
+numIncrease(num, numObject);
+console.log('num is '+num+' and numObject[0] is '+numObject[0]);
+
+function changeArray(_numObject)
+{
+    _numObject = new Array('turtle', 'chicken', 'rabbit');
+    console.log('_numObject[0] is '+_numObject[0]);
+}
+changeArray(numObject);
+console.log('numObject[0] is '+numObject[0]);
+
+
+function add(_num1, _num2)
+{
+    return _num1+_num2;
+}
+var num = add(12, 5);
+// console.log(add(10,10));
+console.log('Adding num1 and num2: '+num);
+
+
+for (var i=0; i<=10; i++)
+{
+    console.log(i);
+}
+
+for (var i=0; i<colors.length; i++)
+{
+    console.log('The color is: '+colors[i]);
+}
+
+
+var numRows=10;
+for (var currentRow=1; currentRow<=numRows; currentRow++) {
+    var stars="";
+    for (var numStars=1; numStars<=currentRow; numStars++) {
+        stars = stars+'*';
+    }
+    console.log(stars);
+}
+
+
+var i=0;
+while (i<10) {
+    console.log(i);
+    i++;
+}
+
+console.log('------------ Even numbers ------------')
+
+var currentNum = 0;
+var maxNum = 20;
+while (currentNum <= maxNum) {
+    if (currentNum % 2 ==0) {
+        console.log(currentNum);
+    }
+    currentNum++;
+}
+
+
+
+
+</script>
